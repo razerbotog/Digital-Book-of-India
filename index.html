@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Digital Book of India</title>
+	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=5">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 mt-3">
+				<div class="image d-flex justify-content-center" data-aos="fade-up">
+					<img src="./images/india.jpg?v=5" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="text-center text-uppercase hero">
+					<h1 class="mt-4" data-aos="slide-right">COMING SOON</h1>
+					<h2 class="mt-1" data-aos="slide-left">Digital Book of India</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center" data-aos="zoom-in">
+			<div class="col-10 about">
+				<div class="">
+					Unleash the transformative power of digital business in India! Our dedicated mission is to level the playing field for businesses of every size and industry, ushering them into the realm of internet exposure and prosperity. With a comprehensive approach, we provide tailored online marketing strategies and seamless ecommerce platforms to meet all your business needs. Embrace boundless opportunities as we connect you with an expansive online audience, guiding you towards a successful and thriving digital presence.
+				</div>
+				<div class="mt-2">
+					In this age of technological advancement, the key to unlocking growth lies in harnessing the potential of the digital landscape. We empower you with the tools and knowledge necessary to navigate this new frontier, allowing you to tap into previously untapped markets and reach customers across the nation.
+				</div>
+				<div class="mt-2">
+					Embrace the future with confidence as we collaborate to transform your business into a digital powerhouse. Together, let's seize the endless possibilities that India's digital revolution offers and pave the way for your triumphant journey in the digital world.
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-12 text-center" data-aos="zoom-out-up">
+				<h4>We'll be up and running Soon</h4>
+			</div>
+			<div class="col-12 d-flex justify-content-center" data-aos="zoom-in-up">
+				<div class="countdown-container mt-3">
+                  <ul class="list-unstyled countdown-counter d-flex justify-content-center">
+                    <li><span class="fs-1 d-block text-center" id="days">00</span>Days</li>
+                    <li><span class="fs-1 d-block text-center" id="hours">00</span>Hr</li>
+                    <li><span class="fs-1 d-block text-center" id="min">00</span>Min</li>
+                    <li><span class="fs-1 d-block text-center" id="sec">00</span>Sec</li>
+                  </ul>
+                </div>
+			</div>	
+		</div>
+		
+	</div>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	offset: 120,
+  		duration: 1500,
+  		easing:'ease-in-out',
+    });
+  </script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<script>
+		// special countdown
+let daysItem = document.querySelector("#days");
+let hoursItem = document.querySelector("#hours");
+let minItem = document.querySelector("#min");
+let secItem = document.querySelector("#sec");
+
+let countDown = () => {
+	let futureDate = new Date("30 september 2023");
+	let currentDate = new Date();
+	let myDate = futureDate - currentDate;
+
+	let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
+							//millisec / mins / sec / hours
+	let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
+	let min = Math.floor(myDate / 1000 / 60) % 60;
+	let sec = Math.floor(myDate / 1000) % 60;
+
+
+	daysItem.innerHTML = days;
+	hoursItem.innerHTML = hours;
+	minItem.innerHTML = min;
+	secItem.innerHTML = sec;
+	
+}
+
+countDown()
+
+setInterval(countDown, 1000)
+	</script>
+
+</body>
+</html>

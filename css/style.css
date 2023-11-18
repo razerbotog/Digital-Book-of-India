@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+html,body{
+	width: 100;
+/*    height: 100%;*/
+/*    height: 100dvh;*/
+    height: auto;
+	
+	box-sizing: border-box;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+    overflow-y: scroll !important;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.container-fluid{
+	/* overflow-x: hidden; */
+	width: 100%;
+	height: 200vh;
+/*	height: auto;*/
+	background: rgb(2,0,36);
+background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}
+.image{
+}
+img{
+	width: 50%;
+	height: 50%;
+	border: 1px #fff solid;
+	padding: 1rem;
+}
+.hero{
+	color: white;
+}
+h1{
+	color: white;
+	font-weight: 400;
+	font-weight: 315;
+	letter-spacing: 1.3rem;
+}
+h2{
+	word-spacing: 0.7rem;
+}
+.about{
+	color: white;
+	border: 1px #fff solid;
+	padding: 2rem;
+	margin-top: 1rem;
+}
+h4{
+	color: #fff;
+	text-transform: uppercase;
+}
+.countdown-container li{
+	color: #FFD9C0;
+	font-size: 2rem;
+	margin: 2rem;
+}
+.countdown-container li span{
+	border: 1.5px white solid;
+	padding: 2rem;
+	font-size: bold;
+	color: red;
+}
+@media only screen and (max-width: 1200px) {
+	img{
+	width: 60%;
+	height: 60%;
+	padding: 0.5rem;
+	}
+	h1{
+		font-weight: 350;
+	letter-spacing: 1.2rem;
+	}
+
+
+}
+@media only screen and (max-width: 1030px){
+	h1{
+		font-weight: 315;;
+	letter-spacing: 1rem;
+	}
+	.about{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 992px){
+	img{
+		width: 70%;
+		height: 70%;
+	}
+	h1{
+		font-weight: 315;
+		letter-spacing:0.8rem;
+		word-spacing: 0.4rem;
+	}
+	h2{
+		word-spacing: 0.4rem;
+	}
+}
+@media only screen and (max-width: 768px){
+	.container-fluid{
+		height: 180vh;
+	}
+	img{
+		width: 75%;
+		height: 75%;
+	}
+	.about{
+		font-size: 12px;
+	}
+	.countdown-container li{
+	font-size: 1.5rem;
+	margin: 1rem;
+	}
+	.countdown-container li span{
+		padding: 1.5rem;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.container-fluid{
+		height: 160vh;
+	}
+	.about{
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 390px){
+	.container-fluid{
+		height: 140vh;
+	}
+	img{
+	width: 80%;
+	height: 80%;
+	padding: 0.6rem;
+	}
+	h1{
+	font-weight: 200;
+	letter-spacing: 0.6rem;
+	}
+	.about{
+		margin-top: 2rem;
+		font-size: 8px;
+	}
+
+	.countdown-container li{
+	font-size: 1rem;
+	margin: 0.3rem;
+	}
+	.countdown-container li span{
+	padding: 1rem;
+	font-size: bold;
+	}
+	h4{
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 330px){
+	.container-fluid{
+		height: 140vh;
+	}
+	.countdown-container li{
+	font-size: 0.9rem;
+	margin: 0.2rem;
+	}
+	.countdown-container li span{
+	padding: 0.8rem;
+	font-size: bold;
+	}
+}
+@media only screen and (max-width: 260px){
+	.container-fluid{
+		height: 100vh;
+		overflow-x: hidden;
+
+	}
+	.countdown-container li{
+	font-size: 0.5rem;
+	margin: 0.2rem;
+	}
+	.countdown-container li span{
+		width: 100%;
+		height: 80%;
+		padding: 0.6rem;
+		padding: 0.5rem;
+	}
+
+		h1{
+		font-size: 1rem;
+	font-weight: 100;
+	letter-spacing: 0.2rem;
+	}
+	h2{
+		font-size: 1rem;
+		font-weight: 500;
+		white-space: 0.7rem;	
+	}
+	h3{
+		margin-top: -22px
+		font-size: 0.8rem;
+	}
+	.about{
+		padding: 5px;
+		 margin-top: -1px;
+		font-size: 5px;
+
+	}
+	img{
+	 margin-top: 24px;
+	width: 85%;
+	height: 85%;
+	padding: 5px;
+	}
+}
